@@ -1,17 +1,26 @@
 package one.dio.com;
 
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
 
-        Funcionario funcionario = new Funcionario();
+        int n1;
+        int n2;
 
-        Funcionario gerente = new Gerente();
-        Funcionario vendedor = new Vendedor();
-        Funcionario faxineiro = new Faxineiro();
+        Scanner input = new Scanner(System.in);
 
-       // Vendedor vendedor_ = (Vendedor) new Funcionario();
+        System.out.println("Qual o primeiro número? ");
+        n1 = input.nextInt();
+        System.out.println("Qual o segundo número? ");
+        n2 = input.nextInt();
 
-        System.out.println(gerente);
-
+        System.out.println("Soma: " + (n1 + n2));
+        System.out.println("Subtração: " + (n1 - n2));
+        System.out.println("Multiplicação: " + (n1 * n2));
+        System.out.println("Divisão: " + (n1 / n2));
     }
 }
